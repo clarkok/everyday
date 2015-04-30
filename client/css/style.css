@@ -1,0 +1,177 @@
+html,
+body {
+  background-color: #eee;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+section {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#welcome h1 {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  line-height: 100vh;
+  text-align: center;
+}
+#wrapper {
+  overflow: hidden;
+  position: relative;
+}
+#wrapper #add {
+  width: 1.5em;
+  height: 1.5em;
+  bottom: 1em;
+  right: 1em;
+  position: absolute;
+  border-radius: 3em;
+  background: #f00;
+  color: #fff;
+  font-size: 2em;
+  line-height: 1.5em;
+  text-align: center;
+  text-decoration: none;
+  z-index: 10;
+}
+.page {
+  position: absolute;
+  top: 0;
+  transition: left 0.5s;
+}
+.page .load-mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.page .load-mask.loading {
+  display: block;
+}
+.page .wrapper {
+  height: 100%;
+  width: 100%;
+}
+.page .wrapper .gallery {
+  width: 100vw;
+  height: 75vw;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #999;
+  overflow: hidden;
+  position: relative;
+}
+.page .wrapper .meta {
+  margin-top: 0.5em;
+  padding-left: 0.5em;
+  font-weight: 700;
+}
+.page .wrapper .content {
+  padding: 0.5em;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.page .wrapper .content p {
+  margin: 0;
+  line-height: 1.5em;
+}
+.page .wrapper .touch-mask {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: calc(100vh - 75vw);
+  width: 100vw;
+}
+#login {
+  padding-top: 3em;
+  background-color: #eee;
+}
+#login h1 {
+  text-align: center;
+  font-weight: 300;
+}
+#login #login-wrapper {
+  width: 80%;
+  background-color: #fff;
+  margin: auto;
+  padding: 1em;
+}
+#login #login-wrapper label,
+#login #login-wrapper input,
+#login #login-wrapper button {
+  display: block;
+}
+#login #login-wrapper label {
+  color: #c00;
+}
+#login #login-wrapper input,
+#login #login-wrapper button {
+  font-size: 1em;
+  padding: 0.3em;
+  outline: 0;
+  width: 100%;
+  margin-bottom: 1em;
+  border: none;
+  border-bottom: 1px solid #900;
+  box-sizing: border-box;
+}
+#login #login-wrapper button {
+  background-color: #900;
+  color: #fff;
+  margin-bottom: 0.5em;
+}
+#login #login-wrapper button:hover,
+#login #login-wrapper button:active {
+  background-color: #500;
+}
+#upload #new-content {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  height: 30vh;
+  font-size: 1em;
+  padding: 1em;
+}
+#upload button {
+  display: block;
+  margin: 1em;
+  border: 0;
+  outline: 0;
+  width: calc(100% - 2em);
+  font-size: 1.2em;
+  padding: 0.3em;
+}
+#upload #submit {
+  background-color: #c00;
+  color: #fff;
+}
+#upload .img-list-outer {
+  width: 100%;
+  height: 1.5em;
+  margin-bottom: 0.3em;
+  position: relative;
+}
+#upload .img-list-outer .img-list-inner {
+  width: 0;
+  display: inline-block;
+  float: left;
+  height: 1.5em;
+  background-color: #00f;
+  transition: all 0.3s;
+}
+#upload .img-list-outer .img-list-text {
+  position: absolute;
+  color: #fff;
+  top: 0;
+  left: 0;
+  height: 1.5em;
+  line-height: 1.5em;
+}

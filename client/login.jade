@@ -1,0 +1,18 @@
+doctype html
+html(lang="zh-cmn-Hans")
+  head
+    meta(charset="utf-8")
+    title Admin
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no")
+    link(rel="stylesheet" href="css/style.css")
+  body#login
+    h1 Login
+    #login-wrapper
+      form#login-form(action="javascript:void(0)" method="POST")
+        label(for="login-username") Username
+        input#login-username(type="text" name="username")
+        label(for="login-password") Password
+        input#login-password(type="password" name="password")
+        button#login-submit Login
+    script(src="js/jquery.min.js")
+    script(src="js/login.js")
